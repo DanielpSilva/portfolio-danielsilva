@@ -1,0 +1,124 @@
+html {
+    overflow-x: hidden;
+}
+
+#apresentation {
+    color: white;
+    font-family: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    margin-bottom: auto;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+@media (max-width: 992px) {
+    #apresentation {
+        font-size: 39px;
+    }
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #edf2f4;
+    background-image: url("../img/teclado.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+#inicio {
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: #D3D3D3;
+}
+
+#pag {
+    z-index: 2;
+    height: 220px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+article {
+    margin: 50px;
+    text-align: center;
+}
+
+article a {
+    padding: 15px 40px;
+    border: 3px solid white;
+    text-decoration: none;
+    margin: 15px;
+    color: white;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: white;
+    background: transparent;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+/*BOTÃO ANIMADO INCIO*/
+
+.middle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+#btn {
+    border-radius: 30px 30px 30px 30px;
+    width: 220px;
+    margin-top: 10px;
+    height: 50px;
+    position: relative;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 30px 0;
+    border: 1px solid white;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+
+.btn::before {
+    opacity: 0.8;
+    background: gray;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+.btn3::before {
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.btn3:hover::before {
+    height: 380%;
+    background-color: #186674;
+}
+
+#btn:hover {
+    border: 2px solid #186674;
+}
